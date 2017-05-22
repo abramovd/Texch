@@ -1,14 +1,30 @@
-class NewsterException(Exception):
+class TexchException(Exception):
     pass
 
 
-class InputDataException(NewsterException):
+class NoInputDataException(TexchException):
     pass
 
 
-class PreprocessingException(NewsterException):
+class NoMethodSetException(TexchException):
     pass
 
 
-class NotRunYet(NewsterException):
+class NotRunYetException(TexchException):
+    pass
+
+
+class NotTrueLabelsSetException(TexchException):
+    pass
+
+
+class NotCorrectEstimatorException(TexchException):
+    pass
+
+
+class ProxyObjectException(TexchException):
+    pass
+
+
+class PreprocessingException(TexchException):
     pass
